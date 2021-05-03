@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MLA DETAILS</ion-title>
+    <ion-icon name="close-outline" slot="end"(click)="modalController.dismiss()" ></ion-icon>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+      <ion-item><b>MLA Name:</b>
+          <ion-label>{{mladata.MLA_name}} </ion-label></ion-item>
+  <ion-item><b>District:</b>
+  <ion-label>{{mladata.District}} </ion-label></ion-item>
+  <ion-item><b>Constituency Name:</b>
+      <ion-label>{{mladata.constituency_name}} </ion-label></ion-item>
+      <ion-item><b>Party Name:</b>
+          <ion-label>{{mladata.party_name}} </ion-label></ion-item>
+          <ion-item><b>Party:</b>
+              <ion-label>{{mladata.Party}} </ion-label></ion-item>
+              <ion-item><b>Total Member:</b>
+                  <ion-label>{{mladata.total_member}} </ion-label></ion-item>
+                  <ion-item><b>Gender:</b>
+                      <ion-label>{{mladata.gender}} </ion-label></ion-item>
+                      <ion-item><b>Father Name:</b>
+                          <ion-label>{{mladata.fathers_Name}} </ion-label></ion-item>
+                          <ion-item><b>Spouse_Name:</b>
+                              <ion-label>{{mladata.Spouse_Name}} </ion-label></ion-item>
+                              <ion-item><b>HighestEducation:</b>
+                                  <ion-label>{{mladata.Highest_Education}} </ion-label></ion-item>
+                                  <ion-item><b>University:</b>
+                                      <ion-label>{{mladata.University}} </ion-label></ion-item>
+                                      <ion-item><b>Photo:</b>
+                                          <ion-label>{{mladata.photo}} </ion-label></ion-item>
+                                          <ion-item><b>Address:</b>
+                                              <ion-label>{{mladata.address}} </ion-label></ion-item>
+                                              <ion-item><b>Emailaddress:</b>
+                                                  <ion-label>{{mladata.Email_address}} </ion-label></ion-item>
+                                                  <ion-item><b>Mobile:</b>
+                                                      <ion-label>{{mladata.Mobile}} </ion-label></ion-item>
+
+
+</ion-card>
+</ion-content>

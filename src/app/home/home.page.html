@@ -1,0 +1,28 @@
+<ion-header [translucent]="true"  >
+  <ion-toolbar class="toolbar"> 
+    
+    <ion-title style="color:darkorchid;text-align:center">
+     Names of States
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+    <ion-item >
+        <ion-icon name="location-outline" slot="start" style="color:green"></ion-icon>
+      <ion-label ><b>State Name</b></ion-label> 
+    <ion-select [(ngModel)]="state" (ionChange)="selectState(state)" >
+    <ion-select-option *ngFor="let x of data" value="{{x.State_name}}">{{x.State_name}}</ion-select-option>
+  </ion-select>
+    </ion-item>
+    <ion-card *ngIf="mla.length>0">
+        <ion-label style="color:royalblue;text-align:center"><h1><u>MLA Names List</u></h1></ion-label>
+        <ion-list *ngFor="let m of mla;let i=index">
+        <ion-item (click)="OpenPage(m)">{{m.MLA_name}}</ion-item>
+          <!-- <ion-button  class="btn btn-primary btn-sm"(click)="OpenPage(m)">View</ion-button> -->
+        </ion-list>
+
+    </ion-card>
+
+    
+</ion-content>
